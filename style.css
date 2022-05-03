@@ -29,11 +29,17 @@ h2 {
 }
 
 h3 {
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 31px;
   line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h4 {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -182,7 +188,13 @@ p.section-paragraphe {
 /* Section 4 */
 
 section.section-4 {
-  height: 780px;
+  height: 854px;
+}
+
+div.paragraphes-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 div.paragraphe-img {
@@ -235,51 +247,82 @@ section.section-5 {
   display: flex;
   flex-direction: column;
   height: 584px;
-  margin: 30px 77px 0px 77px;
+  margin: 30px 77px 0px 79px;
 }
 
 h2.titre-produits {
   margin-top: 60px;
   width: 604px;
   height: 70px;
-  left: 78.75px;
-  top: 2750.13px;
+  left: 79px;
+  top: 2750px;
 }
 
 div.produits {
   display: flex;
   flex-direction: row;
   justify-self: center;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   margin-top: 27px;
 }
 
-div.produit {
-}
-
-button.btn-panier,
-img.panier,
-img.wishlist,
-button.btn-heart {
+div.btn-hearts,
+div.btn-paniers {
   position: absolute;
+  display: flex;
+  width: 1034px;
+  margin-left: 314px;
+  justify-content: space-between;
 }
 
-button.btn-heart {
+div.btn-hearts {
+  margin-top: 7px;
+}
+
+div.btn-paniers {
+  margin-top: 223px;
+}
+
+button.btn-heart-1,
+button.btn-heart-2,
+button.btn-heart-3,
+button.btn-panier-1,
+button.btn-panier-2,
+button.btn-panier-3 {
   width: 32px;
   height: 32px;
-  left: 397.5px;
-  top: 2676px;
-  background-color: #ffff;
   border-radius: 100px;
   border: none;
+  background-color: #ffff;
 }
 
-img.wishlist {
-  top: 4px;
-  left: 4px;
+img.wishlist-1,
+img.wishlist-2,
+img.wishlist-3,
+img.panier-1,
+img.panier-2,
+img.panier-3 {
   width: 24px;
   height: 24px;
+}
+
+img.wishlist-1,
+img.wishlist-2,
+img.wishlist-3,
+img.panier-1,
+img.panier-2,
+img.panier-3 {
+  position: relative;
+  left: -2px;
+  top: 1px;
+}
+
+div.produit {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 img.article {
@@ -289,6 +332,7 @@ img.article {
 }
 
 div.informations {
+  margin-top: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,26 +340,54 @@ div.informations {
   align-content: space-around;
 }
 
-button.btn-panier {
-  width: 32px;
-  height: 32px;
-  left: 325.5px;
-  top: 224px;
-}
-
-img.panier {
-  width: 24px;
-  height: 24px;
-  left: 329.5px;
-  top: 228px;
-  align-self: center;
-}
-
 p.nom-produit {
+  text-align: center;
+  margin: 5px 0px;
 }
 
-p.prix {
-}
-
+p.prix,
 p.couleurs {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
+
+/* Fin Section 5*/
+
+/* Section 6 */
+
+section.section-6 {
+  background: #f9f9f9;
+  height: 184px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 76px;
+}
+
+div.reassurance {
+  max-width: 157px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+img.icon {
+  width: 24px;
+  height: auto;
+}
+
+p.reassurance-texte {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 8px 0px;
+}
+
+/* FIn Section 6 */
