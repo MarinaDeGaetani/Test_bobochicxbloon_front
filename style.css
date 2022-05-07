@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=NTR&display=swap");
-
-.root {
-}
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=NTR&family=Noto+Serif:ital,wght@0,700;1,400&display=swap");
 
 body {
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  color: #0c0c0d;
 }
 
 h1 {
@@ -39,13 +37,86 @@ h3 {
   text-transform: uppercase;
 }
 
+h3.h3-bloon {
+  font-family: "Noto Serif", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
 h4 {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
+span.bold {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+span.bold-souligné {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+span.noto {
+  font-family: "Noto Serif", serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+div.shadow-1,
+div.shadow-2,
+div.shadow-3,
+div.shadow-4,
+div.shadow-5 {
+  position: absolute;
+  max-width: 1520px;
+  height: 50px;
+  left: -0.25px;
+  opacity: 0.3;
+  box-shadow: 10px 10px 10px rgba(34, 34, 40, 0.25);
+}
+
+div.shadow-1 {
+  top: 593px;
+}
+
+div.shadow-2 {
+  top: 1023px;
+}
+
+div.shadow-3 {
+  top: 1651px;
+}
+
+div.shadow-4 {
+  top: 2505px;
+}
+
+div.shadow-5 {
+  top: 3196px;
+}
+
 /* Section 1 */
+
+section.section-1 {
+  margin: 0px 77px 0px 77px;
+}
 
 div.logos-slogan-campagne {
   display: flex;
@@ -65,7 +136,6 @@ div.logos {
 }
 
 img.logo-bobochic {
-  position: static;
   width: 240px;
   height: 59px;
   left: 0px;
@@ -80,7 +150,6 @@ span {
 }
 
 img.logo-bloon {
-  position: static;
   width: 164px;
 }
 
@@ -258,6 +327,33 @@ h2.titre-produits {
   top: 2750px;
 }
 
+/* Slider */
+
+.bx-wrapper {
+  border: 5px solid #fff;
+  box-shadow: none;
+}
+
+div.bx-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* height: 338px; */
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: none;
+  text-indent: none;
+  display: none;
+  width: none;
+  height: none;
+  margin: none;
+  outline: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
 div.produits {
   display: flex;
   flex-direction: row;
@@ -352,6 +448,11 @@ p.couleurs {
   text-transform: uppercase;
 }
 
+p.couleurs:hover {
+}
+.pastilles {
+}
+
 /* Fin Section 5*/
 
 /* Section 6 */
@@ -390,4 +491,200 @@ p.reassurance-texte {
   margin: 8px 0px;
 }
 
-/* FIn Section 6 */
+/* Fin Section 6 */
+
+/* Mobile */
+
+@media screen and (max-width: 376px) {
+  h1 {
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 35px;
+    width: 325px;
+  }
+
+  h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: center;
+    width: 325px;
+  }
+
+  h2.titre-produits {
+    text-align: left;
+    width: 325px;
+    height: 140px;
+  }
+
+  h3 {
+    font-family: "Noto", serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  div.shadow-1,
+  div.shadow-2,
+  div.shadow-3,
+  div.shadow-4,
+  div.shadow-5 {
+    min-width: 375px;
+  }
+
+  /* Section 1*/
+
+  section.section-1 {
+  }
+
+  div.logos {
+    width: 325px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  div.gif-texte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 325px;
+  }
+
+  img.gif-balloon {
+    width: 324px;
+    height: 183px;
+    background: url(./ressources/Bobochic_x_Tour_Eiffel_2_1.svg);
+  }
+
+  /* Fin Section 1 */
+
+  /* Section 2*/
+
+  div.section-2-texte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 325px;
+    margin: auto;
+  }
+
+  p.section-2-petit-texte {
+    width: 325px;
+  }
+
+  /* Fin Section 2 */
+
+  /* Section 3 */
+
+  div.pres-produit {
+    width: 325px;
+  }
+
+  img.gros-balloon {
+    position: absolute;
+    width: 703.47px;
+    height: 467px;
+    left: -307px;
+  }
+
+  p.section-paragraphe {
+    position: absolute;
+    width: 161px;
+    height: 384px;
+    left: 188px;
+  }
+  /* Fin Section 3 */
+
+  /* Section 4 */
+
+  section.section-4 {
+    position: absolute;
+    top: 1707px;
+  }
+
+  p.section-4-paragraphe,
+  p.section-4-paragraphe-2 {
+    width: 325px;
+    text-align: center;
+  }
+
+  div.paragraphe-img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 49px 26px 0px 27px;
+  }
+
+  img.balloon-decor,
+  img.balloon-decor-2 {
+    width: 325px;
+    height: 230px;
+  }
+  /* Fin Section 4 */
+
+  /* Section 5 */
+
+  div.btn-hearts,
+  div.btn-paniers {
+    display: none;
+  }
+
+  section.section-5 {
+    width: 325px;
+    position: absolute;
+    top: 2800px;
+    margin: 36px 26px 0px 27px;
+  }
+
+  img.article {
+    height: 115px;
+    width: 194px;
+    border-radius: 10px;
+  }
+
+  /* Slider */
+
+  .bx-wrapper .bx-pager {
+    box-shadow: none;
+  }
+
+  /* Fin Section 5 */
+
+  /* Section 6 */
+
+  section.section-6 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 3412px;
+    width: 325px;
+    height: 300px;
+    margin: 67px 0px 0px 27px;
+    background-size: initial;
+  }
+
+  div.reassurance-mobile {
+    display: none;
+  }
+
+  /* Fin Section 6 */
+}

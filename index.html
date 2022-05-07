@@ -5,52 +5,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Une description de la page" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
   </head>
   <body>
     <header></header>
     <main>
       <section class="section-1">
         <div class="logos-slogan-campagne">
-          <div class="logos">
-            <img
-              src="./ressources/Logo_Bobochic_2021.svg"
-              alt="Logo Bobochic"
-              class="logo-bobochic"
-            />
-            <span>x</span>
-            <img
-              src="./ressources/bloon_1.svg"
-              alt="Logo Bloon"
-              class="logo-bloon"
-            />
-          </div>
-          <p class="slogan">L’alliance parfaite entre Ergonomie et design</p>
-        <div class="gif-texte">
-        <img
-          src="./ressources/Bobochic_x_Tour_Eiffel_2_1.svg"
-          alt="gif_balloon"
-          class="gif-balloon"
-        />
-        <h1>
-          Bobochic s’associe avec la jeune marque française Bloon pour une
-          collection limitée des plus cocoonings !
-        </h1>
-        <p class="section-1-sous-titre">
-          Découvrez 3 modèles de siège ballon pour sublimer votre espace de
-          travail, au bureau ou à la maison !
-        </p>
-      </div>
+            <div class="logos">
+              <img
+                src="./ressources/Logo_Bobochic_2021.svg"
+                alt="Logo Bobochic"
+                class="logo-bobochic"
+              />
+              <span>x</span>
+              <img
+                src="./ressources/bloon_1.svg"
+                alt="Logo Bloon"
+                class="logo-bloon"
+              />
+            </div>
+            <p class="slogan">L’alliance parfaite entre   Ergonomie et design</p>
+            <div class="gif-texte">
+              <img
+                src="./ressources/Bobochic_x_Tour_Eiffel_2_1.svg"
+                alt="gif_balloon"
+                class="gif-balloon"
+              />
+              <h1>
+                Bobochic s’associe avec la jeune marque française       Bloon pour une
+                collection limitée des plus cocoonings !
+              </h1>
+              <p class="section-1-sous-titre">
+                Découvrez 3 modèles de siège ballon pour sublimer       votre espace de
+                travail, au bureau ou à la maison !
+              </p>
+            </div>
+        </div>
       </section>
      
       <section class="section-2">
+        <div class="shadow-1"></div>
         <div class="section-2-texte">
           <h2>Bloon c'est quoi?</h2>
           <p class="section-2-petit-texte">
             C’est un siège ballon innovant et ergonomique. Conçu par ses deux
-            créateurs Kévin Rayes et Raphael Mille, tous deux Osthéopathe et
+            créateurs 
+            <span class="bold"> Kévin Rayes </span>
+            et 
+            <span class="bold"> Raphael Mille </span>
+            , tous deux Osthéopathe et
             Designer.
           </p>
         </div>
@@ -63,15 +78,14 @@
       </section>
       
       <section class="section-3">
+        <div class="shadow-2"></div>
         <div class="pres-produit">
           <img src="./ressources/image_11.svg" alt="balloon-gros-plan" 
           class="gros-balloon"/>
-          <p class="section-paragraphe section-3-souligner-gras">
-            Ce siège d’une nouvelle génération révolutionne l’assise et
-            l’ergonomie. Vous ne vous en lasserez plus ! 
-            
-            Très léger, il se
-            transporte facilement et reste toujours droit grâce à sa ceinture !
+          <p class="section-paragraphe">
+            <span class="bold-souligné"> Ce siège d’une nouvelle génération révolutionne l’assise et l’ergonomie. </span> Vous ne vous en lasserez plus ! <br />
+            <br>
+            Très léger, il se transporte facilement et reste toujours droit grâce à sa ceinture !
             Nul risque de tomber ou d’avoir un ballon déformé, tout est pensé
             pour que vous soyez assis confortablement, sans avoir mal au dos.
           </p>
@@ -79,16 +93,17 @@
       </section>
       
     <section class="section-4">
+      <div class="shadow-3"></div>
         <div class="paragraphes-imgs">
           <div class="paragraphe-img">
              <p class="section-4-paragraphe">
                 Une légère instabilité permet de tonifier progressivement vos
                 muscles tout en assurant un confort de qualité. En effet, sa forme
                 ronde favorise les micros mouvements continus ce qui permet de
-                stabiliser votre corps tout en douceur. Si vous souhaitez le ramener
-                chez vous ou le ranger dans un petit espace, il se gonfle et se
-                dégonfle très rapidement grâce à une pompe incluse et un accès
-                facile à la valve.
+                stabiliser votre corps tout en douceur.<br />
+                <br> 
+                Si vous souhaitez le ramener chez vous ou le ranger dans un petit espace, il se gonfle et se
+                dégonfle très rapidement grâce à une <span class="bold"> pompe incluse et un accèsfacile à la valve. </span>
              </p>
              <img src="./ressources/DSC_2279-2_1.svg"   alt="balloon-avec-decor"
              class="balloon-decor" />
@@ -98,36 +113,44 @@
               class="balloon-decor-2" />
               <div class="paragraphe">
               <h2>La touche Bobochic</h2>
-              <p class="section-4-paragraphe-2 section-4-gras, section-4-Noto">
-                  Dans cette collection capsule, Bobochic et Bloon se sont réunis pour
-                  créer le siège ballon à l’image des deux marques. Si la forme et la
-                  technologie ne change pas des autres produits Bloon, Bobochic a
-                  choisi son tissu le plus connu – le velours côtelé issu du Canapé
-                  NIHAD - pour revêtir les produits. Résultat : 3 teintes ultra
-                  tendances et chaleureuses, parfaites pour votre intérieur ou votre
-                  bureau !
+              <p class="section-4-paragraphe-2">
+                  Dans cette collection capsule, 
+                  <span class="bold"> Bobochic </span>
+                  et 
+                  <span class="bold"> Bloon </span>
+                  se sont réunis pour
+                  créer le siège ballon à l’image des deux marques.<br />
+                  <br> 
+                  Si la forme et la technologie ne change pas des autres produits 
+                  <span class="bold"> Bloon, Bobochic </span>
+                  a choisi son tissu le plus connu – le velours côtelé issu du Canapé
+                  <span class="noto"> NIHAD </span>
+                  - pour revêtir les produits.<br /> 
+                  Résultat : 3 teintes ultra tendances et chaleureuses, 
+                  <span class="bold"> parfaites pour votre intérieur ou votre
+                    bureau ! </span>
               </p>
           </div>
         </div>
     </section>
      
     <section class="section-5">
+      <div class="shadow-4"></div>
       <h2 class="titre-produits">Découvrez cette collection unique, design et ergonomique !</h2>
-        
-      <div class="produits">
-
-
-        <div class="btn-hearts">
-          <button class="btn-heart-1">
-            <img src="./ressources/icons/hearts.svg" alt="Wishlist" class="wishlist-1" />
-          </button>
-          <button class="btn-heart-2">
-            <img src="./ressources/icons/hearts.svg" alt="Wishlist" class="wishlist-2" />
-          </button>
-          <button class="btn-heart-3">
-            <img src="./ressources/icons/hearts.svg" alt="Wishlist" class="wishlist-3" />
-          </button>
-        </div>
+      
+      <div class="slider">
+        <div class="produits">
+          <div class="btn-hearts">
+           <button class="btn-heart-1">
+            <img src="./ressources/icons/hearts.svg"  alt="Wishlist" class="wishlist-1" />
+           </button>
+           <button class="btn-heart-2">
+             <img src="./ressources/icons/hearts.svg" alt="Wishlist" class="wishlist-2" />
+           </button>
+           <button class="btn-heart-3">
+             <img src="./ressources/icons/hearts.svg"  alt="Wishlist" class="wishlist-3" />
+           </button>
+          </div>
 
         <div class="btn-paniers">
           <button class="btn-panier-1">
@@ -151,7 +174,7 @@
             
                 <p class="nom-produit">Canapé convertible</p>
                 <p class="prix">1 049 €</p>
-                <p class="couleurs">4 couleurs</p>
+                <p class="couleurs pastilles">4 couleurs</p>
               </div>
           </div>
           
@@ -164,7 +187,8 @@
               
                   <p class="nom-produit">Canapé convertible</p>
                   <p class="prix">1 359 €</p>
-                  <p class="couleurs">4 couleurs</p>
+
+                  <p class="couleurs pastilles">4 couleurs</p>
                 </div>
             </div>
 
@@ -179,12 +203,15 @@
                 
                     <p class="nom-produit">Siège Ballon BLOON tissu velours côtelé Taupe</p>
                     <p class="prix">1 049 €</p>
-                    <p class="couleurs"></p>
+                    <p class="couleurs pastilles"></p>
                   </div>
-              </div>
-      </section>
+                </div>
+      </div>
+    </section>
       
       <section class="section-6">
+        <div class="shadow-5"></div>
+     
         <div class="reassurance">
           <img src="./ressources/icons/sav.svg" alt="icon-sav" class="icon" />
           <h4>Service client</h4>
@@ -205,7 +232,7 @@
           <h4>4x sans frais</h4>
           <p class="reassurance-texte">Réglez en 4 fois sans frais avec ALMA</p>
         </div>
-        <div class="reassurance">
+        <div class="reassurance reassurance-mobile">
           <img src="./ressources/icons/france.svg" alt="icon-france" class="icon"/>
           <h4>Marque française</h4>
           <p class="reassurance-texte">Le savoir faire d’une marque française</p>
