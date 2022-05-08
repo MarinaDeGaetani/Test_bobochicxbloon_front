@@ -535,7 +535,7 @@ p.reassurance-texte {
 
 /* Mobile */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
   h1 {
     font-family: "Jost", sans-serif;
     font-style: normal;
@@ -595,9 +595,6 @@ p.reassurance-texte {
   }
 
   /* Section 1*/
-
-  section.section-1 {
-  }
 
   div.logos {
     width: 325px;
@@ -746,6 +743,7 @@ p.reassurance-texte {
   section.section-6 {
     background-color: #f9f9f9;
     margin: 67px 0px 0px 27px;
+    top: 10px;
   }
 
   div.reassurances {
