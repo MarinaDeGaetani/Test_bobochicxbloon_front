@@ -85,11 +85,12 @@ div.shadow-3,
 div.shadow-4,
 div.shadow-5 {
   position: absolute;
+  min-width: 375px;
   max-width: 1520px;
   height: 50px;
-  left: -0.25px;
+  left: 0px;
   opacity: 0.3;
-  box-shadow: 10px 10px 10px rgba(34, 34, 40, 0.25);
+  box-shadow: 0px 10px 10px rgba(34, 34, 40, 0.25);
 }
 
 div.shadow-1 {
@@ -179,6 +180,7 @@ img.gif-balloon {
   top: 314px;
   border-radius: 10px;
   margin-top: 20px;
+  background-image: url(./ressources/Bobochic_x_Tour_Eiffel_2_1.svg);
 }
 
 p.section-1-sous-titre {
@@ -329,18 +331,6 @@ h2.titre-produits {
 
 /* Slider */
 
-.bx-wrapper {
-  border: 5px solid #fff;
-  box-shadow: none;
-}
-
-div.bx-viewport {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  /* height: 338px; */
-}
-
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: none;
   text-indent: none;
@@ -421,12 +411,21 @@ div.produit {
   align-items: center;
 }
 
-img.article {
+img.article,
+img.article-2,
+img.article-3 {
   height: 217px;
   width: 364px;
   border-radius: 10px;
 }
 
+img.article {
+  background-image: url(./ressources/canap_bella.svg);
+}
+
+img.article-2 {
+  background-image: url(./ressources/canap_lilly.svg);
+}
 div.informations {
   margin-top: 4px;
   display: flex;
@@ -442,15 +441,53 @@ p.nom-produit {
 }
 
 p.prix,
-p.couleurs {
+p.couleurs,
+button.btn-couleurs {
+  width: 123px;
+  height: 27px;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  background-color: #ffff;
+  border: none;
+  text-align: center;
+}
+
+div.btn-couleurs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 20px;
+  border-color: #0c0c0d;
+}
+
+button.btn-couleur-1,
+button.btn-couleur-2,
+button.btn-couleur-3,
+button.btn-couleur-4 {
+  display: none;
 }
 
 p.couleurs:hover {
+  display: none;
 }
-.pastilles {
+div.btn-couleurs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 20px;
+}
+button.btn-couleur-1,
+button.btn-couleur-2,
+button.btn-couleur-3,
+button.btn-couleur-4 {
+  display: contents;
 }
 
 /* Fin Section 5*/
@@ -460,10 +497,13 @@ p.couleurs:hover {
 section.section-6 {
   background: #f9f9f9;
   height: 184px;
+  margin-top: 76px;
+}
+
+div.reassurances {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 76px;
 }
 
 div.reassurance {
@@ -531,12 +571,27 @@ p.reassurance-texte {
     text-align: center;
   }
 
-  div.shadow-1,
-  div.shadow-2,
-  div.shadow-3,
-  div.shadow-4,
+  div.shadow-1 {
+    top: 829px;
+  }
+
+  div.shadow-2 {
+    position: absolute;
+    top: 1201px;
+  }
+
+  div.shadow-3 {
+    top: -39px;
+  }
+
+  div.shadow-4 {
+    top: 10px;
+  }
+
   div.shadow-5 {
-    min-width: 375px;
+    top: 3355px;
+    width: 376px;
+    margin: 0px;
   }
 
   /* Section 1*/
@@ -654,16 +709,34 @@ p.reassurance-texte {
     margin: 36px 26px 0px 27px;
   }
 
-  img.article {
+  div.produit {
+    margin-right: 35px;
+  }
+
+  img.article,
+  img.article-2,
+  img.article-3 {
     height: 115px;
     width: 194px;
     border-radius: 10px;
   }
 
+  img.article {
+    background-image: url(./ressources/rectangle_106.svg);
+  }
+
+  img.article-2 {
+    background-image: url(./ressources/rectangle-107.svg);
+  }
+
   /* Slider */
 
-  .bx-wrapper .bx-pager {
-    box-shadow: none;
+  div.slider {
+    scroll-padding: 0 20px;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    scrollbar-color: none;
   }
 
   /* Fin Section 5 */
@@ -671,6 +744,11 @@ p.reassurance-texte {
   /* Section 6 */
 
   section.section-6 {
+    background-color: #f9f9f9;
+    margin: 67px 0px 0px 27px;
+  }
+
+  div.reassurances {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -678,8 +756,6 @@ p.reassurance-texte {
     top: 3412px;
     width: 325px;
     height: 300px;
-    margin: 67px 0px 0px 27px;
-    background-size: initial;
   }
 
   div.reassurance-mobile {

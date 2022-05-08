@@ -5,18 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Une description de la page" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-
-    <script>
-      $(document).ready(function(){
-        $('.slider').bxSlider();
-      });
-    </script>
   </head>
   <body>
     <header></header>
@@ -39,7 +30,7 @@
             <p class="slogan">L’alliance parfaite entre   Ergonomie et design</p>
             <div class="gif-texte">
               <img
-                src="./ressources/Bobochic_x_Tour_Eiffel_2_1.svg"
+                src=""
                 alt="gif_balloon"
                 class="gif-balloon"
               />
@@ -166,7 +157,7 @@
         </div>
   
           <div class="produit">
-            <img src="./ressources/canap_bella.svg" alt="Canapé Bella" class="article" />
+            <img src="#" alt="" class="article" />
             
               <div class="informations">
                   <h3>Bella</h3>
@@ -174,12 +165,18 @@
             
                 <p class="nom-produit">Canapé convertible</p>
                 <p class="prix">1 049 €</p>
+                <button class="btn-couleurs">
                 <p class="couleurs pastilles">4 couleurs</p>
+                <button class="btn-couleur-1"></button>
+                  <button class="btn-couleur-2"></button>
+                  <button class="btn-couleur-3"></button>
+                  <button class="btn-couleur-4"></button>
+              </button>
               </div>
           </div>
           
             <div class="produit">
-              <img src="./ressources/canap_lilly.svg" alt="Canapé Bella" class="article" />
+              <img src="#" alt="" class="article-2" />
               
                 <div class="informations">
                     <h3>Lilly</h3>
@@ -187,15 +184,20 @@
               
                   <p class="nom-produit">Canapé convertible</p>
                   <p class="prix">1 359 €</p>
-
-                  <p class="couleurs pastilles">4 couleurs</p>
+                  <button class="btn-couleurs">
+                    <p class="couleurs pastilles">4 couleurs</p>
+                    <button class="btn-couleur-1"></button>
+                      <button class="btn-couleur-2"></button>
+                      <button class="btn-couleur-3"></button>
+                      <button class="btn-couleur-4"></button>
+                  </button>
                 </div>
             </div>
 
 
           
               <div class="produit">
-                <img src="./ressources/ballon_espace.svg" alt="Canapé Bella" class="article" />
+                <img src="./ressources/ballon_espace.svg" alt="Canapé Bella" class="article-3" />
                 
                   <div class="informations">
                       <h3 class="h3-bloon">Bloon</h3>
@@ -203,7 +205,7 @@
                 
                     <p class="nom-produit">Siège Ballon BLOON tissu velours côtelé Taupe</p>
                     <p class="prix">1 049 €</p>
-                    <p class="couleurs pastilles"></p>
+                    <p class="couleurs"></p>
                   </div>
                 </div>
       </div>
@@ -211,31 +213,33 @@
       
       <section class="section-6">
         <div class="shadow-5"></div>
-     
-        <div class="reassurance">
-          <img src="./ressources/icons/sav.svg" alt="icon-sav" class="icon" />
-          <h4>Service client</h4>
-          <p class="reassurance-texte">Nous sommes à votre écoute +33 1 76 36 12 35</p>
-        </div>
-        <div class="reassurance">
-          <img src="./ressources/icons/secure.svg" alt="icon-secure" class="icon"/>
-          <h4>Sécurité</h4>
-          <p class="reassurance-texte">Transporteurs spécialisés avec prise de RDV</p>
-        </div>
-        <div class="reassurance">
-          <img src="./ressources/icons/camion.svg" alt="icon-camion" class="icon"/>
-          <h4>Livraison</h4>
-          <p class="reassurance-texte">Transporteurs spécialisés avec prise de RDV</p>
-        </div>
-        <div class="reassurance">
-          <img src="./ressources/icons/4x.svg" alt="icon-4x" class="icon"/>
-          <h4>4x sans frais</h4>
-          <p class="reassurance-texte">Réglez en 4 fois sans frais avec ALMA</p>
-        </div>
-        <div class="reassurance reassurance-mobile">
-          <img src="./ressources/icons/france.svg" alt="icon-france" class="icon"/>
-          <h4>Marque française</h4>
-          <p class="reassurance-texte">Le savoir faire d’une marque française</p>
+
+          <div class="reassurances">
+          <div class="reassurance">
+            <img src="./ressources/icons/sav.svg" alt="icon-sav"  class="icon" />
+            <h4>Service client</h4>
+            <p class="reassurance-texte">Nous sommes à votre  écoute +33 1 76 36 12 35</p>
+          </div>
+          <div class="reassurance">
+            <img src="./ressources/icons/secure.svg"  alt="icon-secure" class="icon"/>
+            <h4>Sécurité</h4>
+            <p class="reassurance-texte">Transporteurs  spécialisés avec prise de RDV</p>
+          </div>
+          <div class="reassurance">
+            <img src="./ressources/icons/camion.svg"  alt="icon-camion" class="icon"/>
+            <h4>Livraison</h4>
+            <p class="reassurance-texte">Transporteurs  spécialisés avec prise de RDV</p>
+          </div>
+          <div class="reassurance">
+            <img src="./ressources/icons/4x.svg" alt="icon-4x"  class="icon"/>
+            <h4>4x sans frais</h4>
+            <p class="reassurance-texte">Réglez en 4 fois sans  frais avec ALMA</p>
+          </div>
+          <div class="reassurance reassurance-mobile">
+            <img src="./ressources/icons/france.svg"  alt="icon-france" class="icon"/>
+            <h4>Marque française</h4>
+            <p class="reassurance-texte">Le savoir faire d’une  marque française</p>
+          </div>
         </div>
       </section>
     </main>
